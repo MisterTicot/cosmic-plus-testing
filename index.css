@@ -355,12 +355,11 @@ template {
 html {
   position: relative;
   box-sizing: border-box;
-  min-height: 100%;
-  overflow-y: scroll;
+  min-height: 100vh;
   vertical-align: middle; }
 
 body {
-  height: 100%;
+  height: 100vh;
   background: #f6f9ff;
   padding: 3rem 0 3em 0;
   font-family: "Source Sans Pro", Arial, sans-serif;
@@ -375,9 +374,7 @@ header {
 
 main, noscript {
   display: block;
-  width: 50em;
-  max-width: 96%;
-  margin: auto;
+  overflow-y: auto;
   max-height: 100%; }
 
 footer {
@@ -391,7 +388,7 @@ a {
   text-decoration: none;
   font-stretch: condensed;
   transition: 0.2s all ease;
-  color: #b7c0d1; }
+  color: #607492; }
   a:hover:not(.selected) {
     text-decoration: none;
     cursor: pointer; }
@@ -411,9 +408,9 @@ nav {
     margin: 0.2rem 0 0 1.6em;
     border-bottom: solid 0.2rem transparent; }
     nav a:hover, nav a.selected {
-      color: #607492; }
+      color: #b7c0d1; }
     nav a.selected {
-      border-bottom-color: #607492; }
+      border-bottom-color: #b7c0d1; }
 
 h2 {
   margin: 2rem 0;
@@ -515,13 +512,13 @@ body > header {
 /* Main Style */
 body > noscript,
 body > main {
-  padding: 0.2em 1%;
-  overflow: hidden; }
+  padding: 0.2em 1%; }
   body > noscript section,
   body > main section {
     position: relative;
-    width: 100%;
-    margin: 2rem 0;
+    width: 50em;
+    max-width: 94%;
+    margin: 2rem auto;
     border-radius: 0.1em;
     box-shadow: 0.1em 0.1em 0.2em #e6e6e6;
     background: #ffffff;
@@ -572,9 +569,11 @@ body > footer {
 
 /* UrlView */
 .urlView {
-  width: 100%;
+  width: 1px;
+  min-width: 100%;
   border: none;
-  background: white; }
+  background: white;
+  height: calc(100vh - 3rem - 3em); }
 
 /*!
  * Partly taken from animate.css -http://daneden.me/animate
