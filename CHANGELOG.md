@@ -2,6 +2,39 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.5.0 - 2019-09-28
+
+### Added
+
+- UI: Add Trezor Wallet library..
+
+### Changed
+
+- UI: Put more focus on documentation.
+
+## 1.4.0 - 2019-09-21
+
+### Added
+
+- UI: Add codepen.io footer icon.
+
+### Changed
+
+- UI: Re-organize footer icons.
+
+### Fixed
+
+- API: Encode the second hash in double-hash URLs. - Thank
+  [@joonix](https://keybase.io/joonix)
+- UI: Rewrite iframe links as soon as first interactive.
+- UI: Update address bar when navigating to anchor.
+
+## 1.3.2 - 2019-08-17
+
+### Fixed
+
+- UI: Prevent nested navigation (again).
+
 ## 1.3.1 - 2019-08-17
 
 ### Fixed
